@@ -35,10 +35,10 @@ function getCellComponent(isBlock, r, i) {
 
 function drawRow(r, c) {
   const rowDiv = document.createElement('div')
-  rowDiv.style.height = height + 'px'
+  rowDiv.style.height = height+ 'px'
   for (let i = 0; i < c; i++) {
     let isBlock =
-      (i === 0 && c == 0) || (i === maxR - 1 && c === maxC - 1)
+      (r === 0 && i == 0) || (r === maxR - 1 && i === maxC - 1)
         ? 0
         : Math.round(Math.random() * (11 - complexity)) === 1
     rowDiv.appendChild(getCellComponent(!!isBlock, r, i))
