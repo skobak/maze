@@ -1,0 +1,66 @@
+        :root {
+           --dead-end-color: rgba(255, 208, 0);
+           --trace-color: rgb(0, 140, 255);
+           --empty-color: rgb(89, 255, 158);
+           --block-color: rgba(255, 0, 0);
+       }
+       
+       .content {
+           display: flex;
+           gap: 20px;
+       }
+       
+       .trace {
+           background-color: var(--trace-color)!important;
+       }
+       
+       .dead-end {
+           background-color: var(--dead-end-color)!important;
+       }
+       
+       .block {
+           background-color: var(--block-color)!important;
+       }
+       
+       .empty {
+           background-color: var(--empty-color)
+       }
+       
+       #grid {
+           width: 50vw;
+       }
+       
+       #log {
+           width: 100%;
+           border: 1px solid black;
+           background: #dadada;
+           margin-top: 10px;
+           padding: 10px;
+       }
+       
+       #pathSeeker {
+           background-color: rgb(255, 255, 255);
+           border-radius: 50%;
+       }
+       
+       .inputField {
+           margin: 10px 0px;
+       }
+       
+       .square {
+           width: 10px;
+           height: 10px;
+           display: inline-block;
+       }
+       
+       .square.block {
+           background-color: var(--block-color);
+       }
+       
+       .square.deadEnd {
+           background-color: var(--dead-end-color)
+       }
+       
+       .square.trace {
+           background-color: var(--trace-color)
+       }
